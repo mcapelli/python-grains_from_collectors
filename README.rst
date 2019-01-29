@@ -59,6 +59,14 @@ Overview
 .. end-badges
 
 An example package. Generated with cookiecutter-pylibrary.
+ open the YML file containg the colletor's grains info
+ for each collector :
+     look for hostname
+     look for eth0 ip
+ generete the final YAML file containig:
+    for each collector :
+    look for hostname
+    look for eth0 ip
 
 * Free software: BSD 2-Clause License
 
@@ -74,6 +82,7 @@ Documentation
 
 
 https://python-grains_from_collectors.readthedocs.io/
+
 
 
 Development
