@@ -19,7 +19,7 @@ def get_collector_dicts(input_data):
             continue
         this_dict['nameservers'] = value['dns']['ip4_nameservers'][0]
         """
-        Discard dict entry if role is Hub
+        Discard input_data dict entry if role is Hub
         """
         for key in value:
             if key == 'roles' and value['roles'][0] == 'z4Collector':
