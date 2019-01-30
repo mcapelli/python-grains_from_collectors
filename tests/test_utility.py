@@ -3,6 +3,7 @@ from grains_from_collectors.utility import get_collector_name
 from grains_from_collectors.utility import get_ip_address
 from grains_from_collectors.utility import get_collector_dicts
 from grains_from_collectors.utility import get_data_from_yaml_file
+
 def test_get_collector_name():
     """
     figure out the data format in the salt data and
@@ -13,7 +14,7 @@ def test_get_collector_name():
 
     salt_input_yaml = """
 first_collector_name:
-  ip_interfaces:
+  ip4_interfaces:
     eth0:
       - 99.99.99.99
 """
@@ -31,7 +32,7 @@ def test_get_ip_address():
 
     salt_input_yaml = """
 first_collector_name:
-  ip_interfaces:
+  ip4_interfaces:
     eth0:
       - 99.99.99.99
 """
@@ -49,13 +50,17 @@ def test_get_collector_dicts():
 
     input_yaml = """
     first_collector_name:
-      ip_interfaces:
+      ip4_interfaces:
         eth0:
           - 99.99.99.99
+      roles:
+        - z4Collector 
     second_collector_name:
-      ip_interfaces:
+      ip4_interfaces:
         eth0:
           - 88.88.88.88
+      roles:
+        - z4Collector    
     """
     input_data = yaml.load(input_yaml)
     expected_data = yaml.load(expected_yaml)
@@ -64,6 +69,6 @@ def test_get_collector_dicts():
 
 
 def test_real_data():
-    real = get_data_from_yaml_file('resources/real_data.yml')
+    real = get_data_from_yaml_file('resources/two_item_sample.yml')
     result = get_collector_dicts(real)
-    assert len(result) > 50
+    assert len(result) == 2

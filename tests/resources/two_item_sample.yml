@@ -1,0 +1,734 @@
+IMAX-ZNS-HUB-001.inframax.ncare:
+  SSDs: []
+  biosreleasedate: 09/30/2014
+  biosversion: '6.00'
+  consistent_network_naming_disabled: false
+  cpu_flags:
+  - fpu
+  - vme
+  - de
+  - pse
+  - tsc
+  - msr
+  - pae
+  - mce
+  - cx8
+  - apic
+  - sep
+  - mtrr
+  - pge
+  - mca
+  - cmov
+  - pat
+  - pse36
+  - clflush
+  - dts
+  - mmx
+  - fxsr
+  - sse
+  - sse2
+  - ss
+  - ht
+  - syscall
+  - nx
+  - rdtscp
+  - lm
+  - constant_tsc
+  - ida
+  - nonstop_tsc
+  - arat
+  - pni
+  - ssse3
+  - cx16
+  - sse4_1
+  - sse4_2
+  - popcnt
+  - lahf_lm
+  cpu_model: Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz
+  cpuarch: x86_64
+  default_interface_ip: 205.153.31.150
+  disks: []
+  dns:
+    domain: ''
+    ip4_nameservers:
+    - 205.153.31.6
+    - 205.153.31.7
+    ip6_nameservers: []
+    nameservers:
+    - 205.153.31.6
+    - 205.153.31.7
+    search:
+    - inframax.ncare
+  domain: inframax.ncare
+  environment: prod
+  fqdn: IMAX-ZNS-HUB-001.inframax.ncare
+  fqdn_ip4:
+  - 205.153.31.150
+  fqdn_ip6: []
+  geography:
+    LAT: null
+    LON: null
+    addr1: 271 Waverley Oaks Road
+    addr2: null
+    country: US
+    floor: 3
+    municipality: Waltham
+    postalCode: 1322
+    rack: null
+    racku: null
+    state: Massachusetts
+    suite: 302
+  gid: 0
+  gpus:
+  - model: SVGA II Adapter
+    vendor: unknown
+  groupname: root
+  host: IMAX-ZNS-HUB-001
+  hwaddr_interfaces:
+    eth0: 00:50:56:b6:bb:05
+    lo: 00:00:00:00:00:00
+  id: IMAX-ZNS-HUB-001.inframax.ncare
+  init: sysvinit
+  ip4_interfaces:
+    eth0:
+    - 205.153.31.150
+    lo:
+    - 127.0.0.1
+  ip6_interfaces:
+    eth0: []
+    lo: []
+  ip_interfaces:
+    eth0:
+    - 205.153.31.150
+    lo:
+    - 127.0.0.1
+  ipv4:
+  - 127.0.0.1
+  - 205.153.31.150
+  ipv6: []
+  kernel: Linux
+  kernelrelease: 2.6.18-419.el5
+  locale_info:
+    defaultencoding: UTF8
+    defaultlanguage: en_US
+    detectedencoding: UTF-8
+  localhost: IMAX-ZNS-HUB-001.inframax.ncare
+  machine_id: 4e24291195ee2c0f2caac2004ede6e94
+  manufacturer: VMware, Inc.
+  master: ncaresalt01.inframax.ncare
+  mdadm: []
+  mem_total: 32186
+  ncareAccessAddress: 205.153.31.150
+  ncareID: IMAX-ZNS-HUB-001.inframax.ncare
+  nodename: IMAX-ZNS-HUB-001.inframax.ncare
+  num_cpus: 8
+  num_gpus: 1
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-5
+  osfullname: CentOS
+  osmajorrelease: '5'
+  osrelease: '5.11'
+  osrelease_info:
+  - 5
+  - 11
+  owner: NCARE
+  path: /sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin
+  pid: 4815
+  platform:
+    Hardware: null
+    OOBDesc: VMWare
+    OOBModel: VMWare
+    OOBNamespace: NCARE
+    OOBipblock: null
+    drivers: VMWare-Tools
+  productname: VMware Virtual Platform
+  ps: ps -efH
+  pythonexecutable: /usr/bin/python2.6
+  pythonpath:
+  - /usr/bin
+  - /usr/lib64/python26.zip
+  - /usr/lib64/python2.6
+  - /usr/lib64/python2.6/plat-linux2
+  - /usr/lib64/python2.6/lib-tk
+  - /usr/lib64/python2.6/lib-old
+  - /usr/lib64/python2.6/lib-dynload
+  - /usr/lib64/python2.6/site-packages
+  - /usr/lib/python2.6/site-packages
+  - /usr/lib/python2.6/site-packages/setuptools-0.6c11-py2.6.egg-info
+  pythonversion:
+  - 2
+  - 6
+  - 8
+  - final
+  - 0
+  roles:
+  - z4Hub
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2016.3.4
+  saltversioninfo:
+  - 2016
+  - 3
+  - 4
+  - 0
+  selinux:
+    enabled: false
+    enforced: Disabled
+  serialnumber: VMware-42 36 4d ac 60 c2 88 a2-82 c8 c4 9e aa e7 2b d7
+  server_id: 661218097
+  shell: /bin/sh
+  stakeholders:
+  - alerts.NCARE
+  topology:
+    ipblock: 205.153.31.150
+    namespace: NCARE
+  uid: 0
+  username: root
+  uuid: 42364dac-60c2-88a2-82c8-c49eaae72bd7
+  virtual: VMWare
+  zenoss: null
+  zenoss_hostname: HUB-001
+  zenoss_services:
+  - 'zenhub
+
+'
+  - 'zentune
+
+'
+  zmqversion: 4.0.5
+City-of-Durham-001.inframax.ncare:
+  SSDs: []
+  biosreleasedate: 04/14/2015
+  biosversion: 1.2a
+  consistent_network_naming_disabled: false
+  cpu_flags:
+  - fpu
+  - vme
+  - de
+  - pse
+  - tsc
+  - msr
+  - pae
+  - mce
+  - cx8
+  - apic
+  - sep
+  - mtrr
+  - pge
+  - mca
+  - cmov
+  - pat
+  - pse36
+  - clflush
+  - dts
+  - acpi
+  - mmx
+  - fxsr
+  - sse
+  - sse2
+  - ss
+  - ht
+  - tm
+  - syscall
+  - nx
+  - rdtscp
+  - lm
+  - constant_tsc
+  - ida
+  - nonstop_tsc
+  - arat
+  - pni
+  - monitor
+  - ds_cpl
+  - vmx
+  - est
+  - tm2
+  - ssse3
+  - cx16
+  - xtpr
+  - sse4_1
+  - sse4_2
+  - popcnt
+  - lahf_lm
+  - 3dnowprefetch
+  cpu_model: Intel(R) Atom(TM) CPU  C2550  @ 2.40GHz
+  cpuarch: x86_64
+  default_interface_ip: 10.160.1.70
+  disks: []
+  dns:
+    domain: ''
+    ip4_nameservers:
+    - 205.153.31.6
+    - 205.153.31.7
+    ip6_nameservers: []
+    nameservers:
+    - 205.153.31.6
+    - 205.153.31.7
+    search:
+    - inframax.ncare
+  domain: inframax.ncare
+  environment: prod
+  fqdn: City-of-Durham-001.inframax.ncare
+  fqdn_ip4:
+  - 10.160.1.70
+  fqdn_ip6: []
+  geography:
+    LAT: null
+    LON: null
+    addr1: 271 Waverley Oaks Road
+    addr2: null
+    country: US
+    floor: 3
+    municipality: Waltham
+    postalCode: 1322
+    rack: null
+    racku: null
+    state: Massachusetts
+    suite: 302
+  gid: 0
+  gpus:
+  - model: ASPEED Graphics Family
+    vendor: unknown
+  groupname: root
+  host: City-of-Durham-001
+  hwaddr_interfaces:
+    eth0: 0c:c4:7a:71:ff:4e
+    eth1: 0c:c4:7a:71:ff:4f
+    eth2: 0c:c4:7a:71:ff:50
+    eth3: 0c:c4:7a:71:ff:51
+    lo: 00:00:00:00:00:00
+  id: City-of-Durham-001.inframax.ncare
+  init: sysvinit
+  ip4_interfaces:
+    eth0:
+    - 10.160.1.70
+    eth1: []
+    eth2: []
+    eth3: []
+    lo:
+    - 127.0.0.1
+  ip6_interfaces:
+    eth0: []
+    eth1: []
+    eth2: []
+    eth3: []
+    lo: []
+  ip_interfaces:
+    eth0:
+    - 10.160.1.70
+    eth1: []
+    eth2: []
+    eth3: []
+    lo:
+    - 127.0.0.1
+  ipv4:
+  - 10.160.1.70
+  - 127.0.0.1
+  ipv6: []
+  kernel: Linux
+  kernelrelease: 2.6.18-408.el5
+  locale_info:
+    defaultencoding: UTF8
+    defaultlanguage: en_US
+    detectedencoding: UTF-8
+  localhost: City-of-Durham-001.inframax.ncare
+  manufacturer: Supermicro
+  master: ncaresalt01.inframax.ncare
+  mdadm: []
+  mem_total: 16023
+  ncareAccessAddress: 10.160.1.70
+  ncareID: City-of-Durham-001.inframax.ncare
+  nodename: City-of-Durham-001.inframax.ncare
+  num_cpus: 4
+  num_gpus: 1
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-5
+  osfullname: CentOS
+  osmajorrelease: '5'
+  osrelease: '5.11'
+  osrelease_info:
+  - 5
+  - 11
+  owner: NCARE
+  path: /sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin
+  pid: 5923
+  platform:
+    Hardware: null
+    OOBDesc: VMWare
+    OOBModel: VMWare
+    OOBNamespace: NCARE
+    OOBipblock: null
+    drivers: VMWare-Tools
+  productname: SYS-5018A-MLTN4
+  ps: ps -efH
+  pythonexecutable: /usr/bin/python2.6
+  pythonpath:
+  - /usr/bin
+  - /usr/lib64/python26.zip
+  - /usr/lib64/python2.6
+  - /usr/lib64/python2.6/plat-linux2
+  - /usr/lib64/python2.6/lib-tk
+  - /usr/lib64/python2.6/lib-old
+  - /usr/lib64/python2.6/lib-dynload
+  - /usr/lib64/python2.6/site-packages
+  - /usr/lib/python2.6/site-packages
+  - /usr/lib/python2.6/site-packages/setuptools-0.6c11-py2.6.egg-info
+  pythonversion:
+  - 2
+  - 6
+  - 8
+  - final
+  - 0
+  roles:
+  - z4Collector
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2016.3.4
+  saltversioninfo:
+  - 2016
+  - 3
+  - 4
+  - 0
+  selinux:
+    enabled: false
+    enforced: Disabled
+  serialnumber: S15401215621274
+  server_id: 1891612359
+  shell: /bin/sh
+  stakeholders:
+  - alerts.NCARE
+  topology:
+    ipblock: 10.160.1.70
+    namespace: NCARE
+  uid: 0
+  username: root
+  uuid: 00000000-0000-0000-0000-0cc47a71ff4e
+  virtual: physical
+  zenoss:
+    hubhost: IMAX-ZNS-HUB-001.inframax.ncare
+  zenoss_hostname: City.of.Durham-001
+  zenoss_services:
+  - 'zenrrdcached
+
+'
+  - 'zenrender
+
+'
+  - 'zenpython
+
+'
+  - 'zredis
+
+'
+  - 'zenwinperf
+
+'
+  - 'zentrap
+
+'
+  - 'zenwin
+
+'
+  - 'zeneventlog
+
+'
+  - 'zenperfsnmp
+
+'
+  - 'zenprocess
+
+'
+  - 'zenstatus
+
+'
+  - 'zenping
+
+'
+  - 'zentune
+
+'
+  - 'zencommand
+
+'
+  - 'zensyslog
+
+'
+  - 'zenmodeler
+
+'
+  - 'zenpropertymonitor
+
+'
+  - 'zenvsphere
+
+'
+  zmqversion: 4.0.5
+BankNewport-001.inframax.ncare:
+  SSDs: []
+  biosreleasedate: 01/19/2018
+  biosversion: '2.1'
+  consistent_network_naming_disabled: false
+  cpu_flags:
+  - fpu
+  - vme
+  - de
+  - pse
+  - tsc
+  - msr
+  - pae
+  - mce
+  - cx8
+  - apic
+  - sep
+  - mtrr
+  - pge
+  - mca
+  - cmov
+  - pat
+  - pse36
+  - clflush
+  - dts
+  - acpi
+  - mmx
+  - fxsr
+  - sse
+  - sse2
+  - ss
+  - ht
+  - tm
+  - syscall
+  - nx
+  - rdtscp
+  - lm
+  - constant_tsc
+  - ida
+  - nonstop_tsc
+  - arat
+  - pni
+  - monitor
+  - ds_cpl
+  - vmx
+  - est
+  - tm2
+  - ssse3
+  - cx16
+  - xtpr
+  - sse4_1
+  - sse4_2
+  - popcnt
+  - lahf_lm
+  - 3dnowprefetch
+  cpu_model: Intel(R) Atom(TM) CPU  C2550  @ 2.40GHz
+  cpuarch: x86_64
+  default_interface_ip: 10.254.1.101
+  disks: []
+  dns:
+    domain: ''
+    ip4_nameservers:
+    - 205.153.31.6
+    - 205.153.31.7
+    ip6_nameservers: []
+    nameservers:
+    - 205.153.31.6
+    - 205.153.31.7
+    search:
+    - inframax.ncare
+  domain: inframax.ncare
+  environment: prod
+  fqdn: bank-newport-001.inframax.ncare
+  fqdn_ip4: []
+  fqdn_ip6: []
+  geography:
+    LAT: null
+    LON: null
+    addr1: None
+    addr2: null
+    country: None
+    floor: None
+    municipality: None
+    postalCode: None
+    rack: null
+    racku: null
+    state: None
+    suite: None
+  gid: 0
+  gpus:
+  - model: ASPEED Graphics Family
+    vendor: unknown
+  groupname: root
+  host: bank-newport-001
+  hwaddr_interfaces:
+    eth0: 0c:c4:7a:77:f4:fc
+    eth1: 0c:c4:7a:77:f4:fd
+    eth2: 0c:c4:7a:77:f4:fe
+    eth3: 0c:c4:7a:77:f4:ff
+    lo: 00:00:00:00:00:00
+  id: BankNewport-001.inframax.ncare
+  init: sysvinit
+  ip4_interfaces:
+    eth0:
+    - 10.254.1.101
+    eth1: []
+    eth2: []
+    eth3: []
+    lo:
+    - 127.0.0.1
+  ip6_interfaces:
+    eth0: []
+    eth1: []
+    eth2: []
+    eth3: []
+    lo: []
+  ip_interfaces:
+    eth0:
+    - 10.254.1.101
+    eth1: []
+    eth2: []
+    eth3: []
+    lo:
+    - 127.0.0.1
+  ipv4:
+  - 10.254.1.101
+  - 127.0.0.1
+  ipv6: []
+  kernel: Linux
+  kernelrelease: 2.6.18-408.el5
+  locale_info:
+    defaultencoding: UTF8
+    defaultlanguage: en_US
+    detectedencoding: UTF-8
+  localhost: bank-newport-001.inframax.ncare
+  manufacturer: Supermicro
+  master: ncaresalt01.inframax.ncare
+  mdadm: []
+  mem_total: 16023
+  ncareAccessAddress: 10.254.1.101
+  ncareID: BankNewport-001.inframax.ncare
+  nodename: bank-newport-001.inframax.ncare
+  num_cpus: 4
+  num_gpus: 1
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-5
+  osfullname: CentOS
+  osmajorrelease: '5'
+  osrelease: '5.11'
+  osrelease_info:
+  - 5
+  - 11
+  owner: NCARE
+  path: /sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin
+  pid: 28443
+  productname: SYS-5018A-MLTN4
+  ps: ps -efH
+  pythonexecutable: /usr/bin/python2.6
+  pythonpath:
+  - /usr/bin
+  - /usr/lib64/python26.zip
+  - /usr/lib64/python2.6
+  - /usr/lib64/python2.6/plat-linux2
+  - /usr/lib64/python2.6/lib-tk
+  - /usr/lib64/python2.6/lib-old
+  - /usr/lib64/python2.6/lib-dynload
+  - /usr/lib64/python2.6/site-packages
+  - /usr/lib/python2.6/site-packages
+  - /usr/lib/python2.6/site-packages/setuptools-0.6c11-py2.6.egg-info
+  pythonversion:
+  - 2
+  - 6
+  - 8
+  - final
+  - 0
+  roles:
+  - z4Collector
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2016.3.4
+  saltversioninfo:
+  - 2016
+  - 3
+  - 4
+  - 0
+  selinux:
+    enabled: false
+    enforced: Disabled
+  serialnumber: S15401215B03930
+  server_id: 164659598
+  shell: /bin/sh
+  stakeholders:
+  - alerts.NCARE
+  topology:
+    ipblock: 10.254.1.101
+    namespace: None
+  uid: 0
+  username: root
+  uuid: 00000000-0000-0000-0000-0cc47a77f4fc
+  virtual: physical
+  zenoss:
+    hubhost: IMAX-ZNS-HUB-002.inframax.ncare
+  zenoss_hostname: BankNewport-001
+  zenoss_name: BankNewport-001
+  zenoss_services:
+  - 'zenrrdcached
+
+'
+  - 'zredis
+
+'
+  - 'zenping
+
+'
+  - 'zencommand
+
+'
+  - 'zeneventlog
+
+'
+  - 'zenpython
+
+'
+  - 'zenprocess
+
+'
+  - 'zenstatus
+
+'
+  - 'zensyslog
+
+'
+  - 'zentrap
+
+'
+  - 'zentune
+
+'
+  - 'zenwin
+
+'
+  - 'zenwinperf
+
+'
+  - 'zenperfsnmp
+
+'
+  - 'zenucsevents
+
+'
+  - 'zenmodeler
+
+'
+  - 'zenpropertymonitor
+
+'
+  - 'zenvsphere
+
+'
+  - 'zenrender
+
+'
+  zmqversion: 4.0.5
