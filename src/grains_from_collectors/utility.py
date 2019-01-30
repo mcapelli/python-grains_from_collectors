@@ -12,7 +12,7 @@ def get_collector_dicts(input_data):
     result_list = []
     for key, value in input_data.items():
         """
-        Discard input_data dict entry if role is not=Collector
+        Discard input_data dict entry if role is not = Collector
         """
         if value['roles'][0] != 'z4Collector':
             continue
