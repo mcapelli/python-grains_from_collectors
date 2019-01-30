@@ -11,6 +11,12 @@ def get_ip_address(salt_data):
 def get_collector_dicts(input_data):
     result_list = []
     for key, value in input_data.items():
+        """
+        Discard input_data dict entry if role is not = Collector
+        """
+        if value['roles'][0] != 'z4Collector':
+            continue
+
         this_dict = {}
         this_dict['hostname'] = key
         try:
@@ -18,13 +24,8 @@ def get_collector_dicts(input_data):
         except KeyError:
             continue
         this_dict['nameservers'] = value['dns']['ip4_nameservers'][0]
-        """
-        Discard input_data dict entry if role is Hub
-        """
-        for key in value:
-            if key == 'roles' and value['roles'][0] == 'z4Collector':
-                result_list.append(this_dict)
 
+        result_list.append(this_dict)
 
     return result_list
 
