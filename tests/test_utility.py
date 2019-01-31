@@ -45,9 +45,13 @@ def test_get_collector_dicts():
 - hostname: first_collector_name
   host_ip_address: '99.99.99.99'
   nameservers: '19.19.19.19'
+  default_gateway: '29.29.29.29'
+  network_mask: '255.255.255.0'
 - hostname: second_collector_name
   host_ip_address: '88.88.88.88'
   nameservers: '18.18.18.18'
+  default_gateway: '28.28.28.28'
+  network_mask: '255.255.255.0'
     """
 
     input_yaml = """
@@ -59,7 +63,11 @@ def test_get_collector_dicts():
         ip4_nameservers:
           - 19.19.19.19    
       roles:
-        - z4Collector 
+        - z4Collector
+      default_gateway:
+        29.29.29.29
+      network_mask:
+        255.255.255.0
     second_collector_name:
       ip4_interfaces:
         eth0:
@@ -68,7 +76,11 @@ def test_get_collector_dicts():
         ip4_nameservers:
           - 18.18.18.18    
       roles:
-        - z4Collector    
+        - z4Collector
+      default_gateway:
+        28.28.28.28
+      network_mask:
+        255.255.255.0      
     """
     input_data = yaml.load(input_yaml)
     expected_data = yaml.load(expected_yaml)

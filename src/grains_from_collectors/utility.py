@@ -26,6 +26,9 @@ def get_collector_dicts(input_data):
             continue
 
         this_dict['nameservers'] = value['dns']['ip4_nameservers'][0]
+        this_dict['default_gateway'] = value['default_gateway']
+        this_dict['network_mask'] = value['network_mask']
+
 
         result_list.append(this_dict)
 
@@ -37,3 +40,6 @@ def get_data_from_yaml_file(input_file):
     with open(input_file) as f:
         yaml_data = yaml.load(f)
     return yaml_data
+
+
+
