@@ -71,3 +71,4 @@ docs/_build
 #  ignore real_data.yml and two_item_sample.yml
 real_data.yml
 two_item_sample.yml
+final_output_file.yml
