@@ -1,9 +1,26 @@
 import yaml
+
+
 from grains_from_collectors.utility import get_collector_name
 from grains_from_collectors.utility import get_ip_address
 from grains_from_collectors.utility import get_collector_dicts
 from grains_from_collectors.utility import get_data_from_yaml_file
 from grains_from_collectors.utility import create_yaml_file
+
+
+def find_subdir(input_dir):
+    """Return the relative path of a directory
+
+    Used by test fixtures to find resource files regardless of where pytests is from from (project_root,
+    project_root/tests, etc). This didn't matter when i was just running pytests directly, but tox runs form teh
+    project dir so this fixes that problem
+    """
+    import os
+    for root, dirs, files in os.walk("."):
+        for d in dirs:
+            if d == input_dir:
+                return os.path.relpath(os.path.join(root, d), ".")
+
 
 def test_get_collector_name():
     """
@@ -95,12 +112,9 @@ def test_real_data():
     assert len(result) == 2
 
 
-def test_create_yaml_file(output_dir='resources'):
+def test_create_yaml_file():
     data_from_grains = get_data_from_yaml_file('resources/real_data.yml')
-    with open('/'.join([output_dir, 'final_output_file.yml']), 'w') as yaml_file:
+    with open('resources/final_output_file.yml', 'w') as yaml_file:
         dictionary = get_collector_dicts(data_from_grains)
         yaml.dump(dictionary, yaml_file, default_flow_style=False)
-
-    assert len(get_collector_dicts(data_from_grains)) > 2
-
 

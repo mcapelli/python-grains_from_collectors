@@ -46,9 +46,10 @@ def get_data_from_yaml_file(input_file):
         yaml_data = yaml.load(f)
     return yaml_data
 
-def create_yaml_file(output_dir):
-    data_from_grains = get_data_from_yaml_file('resources/two_item_sample.yml')
-    with open('/'.join([output_dir, 'final_output_file.yml']), 'w') as yaml_file:
-        yaml.dump(get_collector_dicts(data_from_grains), yaml_file, default_flow_style=False)
 
+def create_yaml_file(output_dir):
+    data_from_grains = get_data_from_yaml_file('resources/real_data.yml')
+    with open('/'.join([output_dir, 'final_output_file.yml']), 'w') as yaml_file:
+        dictionary = get_collector_dicts(data_from_grains)
+        yaml.dump(dictionary, yaml_file, default_flow_style=False)
 

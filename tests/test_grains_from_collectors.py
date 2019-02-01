@@ -6,7 +6,9 @@ from grains_from_collectors.cli import main
 
 def test_main():
     runner = CliRunner()
-    result = runner.invoke(main, [])
+    result = runner.invoke(main, ['resources'])
 
     assert result.output == '()\n'
+#    assert result.output == 'DONE !!!'
+
     assert result.exit_code == 0

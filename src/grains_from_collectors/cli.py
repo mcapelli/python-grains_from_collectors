@@ -18,7 +18,10 @@ import click
 
 
 @click.command()
-@click.argument('names', nargs=-1)
-def main(names):
-    click.echo(repr(names))
+@click.argument('output_path')
+def main(output_path):
+    from grains_from_collectors.utility import create_yaml_file
+    create_yaml_file(output_path)
+
+    click.echo('()')
 
