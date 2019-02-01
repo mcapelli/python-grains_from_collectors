@@ -21,7 +21,7 @@ import click
 @click.argument('output_path')
 def main(output_path):
     from grains_from_collectors.utility import create_yaml_file
-    create_yaml_file(output_path)
+    # create_yaml_file(output_path)
 
     click.echo('()')
 

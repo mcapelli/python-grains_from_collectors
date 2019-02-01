@@ -15,25 +15,19 @@ def get_collector_dicts(input_data):
         """
         Discard input_data dict entry if role is not = Collector
         """
-        if value['roles'][0] != 'z4Collector':
+        if 'z4Collector' not in value['roles']:
             continue
 
         this_dict = {}
-        this_dict['a_hostname'] = key
+        this_dict['hostname'] = key
 
         try:
             this_dict['host_ip_address'] = value['ip4_interfaces']['eth0'][0]
         except KeyError:
             continue
 
-        try:
-            this_dict['nameservers'] = value['dns']['ip4_nameservers'][0]
-        except KeyError:
-            continue
-
-        this_dict['default_gateway'] = value['default_gateway']
-        this_dict['network_mask'] = value['network_mask']
-
+        this_dict['host_default_gateway'] = value['default_gateway']
+        this_dict['host_subnet_mask'] = value['network_mask']
 
         result_list.append(this_dict)
 
@@ -47,9 +41,9 @@ def get_data_from_yaml_file(input_file):
     return yaml_data
 
 
-def create_yaml_file(output_dir):
-    data_from_grains = get_data_from_yaml_file('resources/real_data.yml')
-    with open('/'.join([output_dir, 'final_output_file.yml']), 'w') as yaml_file:
-        dictionary = get_collector_dicts(data_from_grains)
-        yaml.dump(dictionary, yaml_file, default_flow_style=False)
+def create_yaml_file():
+    data_from_grains = get_data_from_yaml_file('grains_data.yml')
+    with open('kickstart_template_data.yml', 'w') as yaml_file:
+        yaml_data = get_collector_dicts(data_from_grains)
+        yaml.dump(yaml_data, yaml_file, default_flow_style=False)
 
