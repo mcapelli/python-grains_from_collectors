@@ -41,9 +41,7 @@ def get_data_from_yaml_file(input_file):
     return yaml_data
 
 
-def create_yaml_file():
-    data_from_grains = get_data_from_yaml_file('grains_data.yml')
-    with open('kickstart_template_data.yml', 'w') as yaml_file:
-        yaml_data = get_collector_dicts(data_from_grains)
-        yaml.dump(yaml_data, yaml_file, default_flow_style=False)
+def create_yaml_file(input_data, output_file):
+    with open(output_file, 'w') as yaml_file:
+        yaml.dump(input_data, yaml_file, default_flow_style=False)
 

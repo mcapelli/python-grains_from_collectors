@@ -100,7 +100,12 @@ def test_get_collector_dicts():
     input_data = yaml.load(input_yaml)
     expected_data = yaml.load(expected_yaml)
     result = get_collector_dicts(input_data)
-    assert result == expected_data
+    assert expected_data[0] in result
+    assert expected_data[1] in result
+    assert len(result) == 2
+    assert result[0] in expected_data
+    assert result[1] in expected_data
+
 
 
 """
