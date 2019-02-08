@@ -15,8 +15,6 @@ def get_collector_dicts(input_data):
         """
         Discard input_data dict entry if role is not = Collector
         """
-        if 'z4Collector' not in value['roles']:
-            continue
 
         this_dict = {}
         this_dict['hostname'] = key
@@ -25,9 +23,15 @@ def get_collector_dicts(input_data):
             this_dict['host_ip_address'] = value['ip4_interfaces']['eth0'][0]
         except KeyError:
             continue
+        try:
+            this_dict['host_default_gateway'] = value['default_gateway']
+        except KeyError:
+            continue
 
-        this_dict['host_default_gateway'] = value['default_gateway']
-        this_dict['host_subnet_mask'] = value['network_mask']
+        try:
+            this_dict['host_subnet_mask'] = value['network_mask']
+        except KeyError:
+            continue
 
         result_list.append(this_dict)
 

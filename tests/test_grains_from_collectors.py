@@ -10,5 +10,5 @@ def test_main(tmp_path):
     result = runner.invoke(main, [str(tmp_path) + '/collector_data.yml',
                                   path_to_real_data_file()])
 
-    assert result.output == '97\n'
+    assert result.output == '106\n'
     assert result.exit_code == 0
