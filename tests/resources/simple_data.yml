@@ -1,0 +1,26 @@
+first_collector_name:
+  ip4_interfaces:
+    eth0:
+      - 99.99.99.99
+  dns:
+    ip4_nameservers:
+      - 19.19.19.19
+  roles:
+    - z4Collector
+  default_gateway:
+    29.29.29.29
+  network_mask:
+    255.255.255.0
+second_collector_name:
+  ip4_interfaces:
+    eth0:
+      - 88.88.88.88
+  dns:
+    ip4_nameservers:
+      - 18.18.18.18
+  roles:
+    - z4Collector
+  default_gateway:
+    28.28.28.28
+  network_mask:
+    255.255.255.0

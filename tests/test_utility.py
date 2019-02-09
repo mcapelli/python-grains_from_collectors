@@ -109,9 +109,9 @@ def test_get_collector_dicts_simple():
 
 def test_get_collector_dicts_real():
 
-    from real_data import path_to_real_data_file
+    from grains_from_collectors.utility import path_to_resource
 
-    input_data = get_data_from_yaml_file(path_to_real_data_file())
+    input_data = get_data_from_yaml_file(path_to_resource('real_data.yml'))
     result = get_collector_dicts(input_data)
 
-    assert len(result) == 106
+    assert len(result) == 105
