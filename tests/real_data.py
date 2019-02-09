@@ -10,3 +10,4 @@ def path_to_real_data_file():
 
         if os.path.isfile(full_path):
             return full_path
+        raise RuntimeError("Can't find real_data file: real_data.yml")
