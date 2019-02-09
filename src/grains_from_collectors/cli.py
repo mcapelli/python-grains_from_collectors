@@ -18,15 +18,14 @@ import click
 
 
 @click.command()
-@click.argument('output_file')
 @click.argument('input_file')
-def main(output_file='collector_data.yml', input_file='real_data.yml'):
+@click.argument('output_file')
+def main(input_file, output_file):
     from grains_from_collectors.utility import get_data_from_yaml_file,\
         get_collector_dicts, create_yaml_file
     input_data = get_data_from_yaml_file(input_file)
     result = get_collector_dicts(input_data)
     create_yaml_file(result, output_file)
-
 
     click.echo(str(len(result)))
 

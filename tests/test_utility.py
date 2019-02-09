@@ -57,7 +57,7 @@ first_collector_name:
     assert get_ip_address(salt_data) == '99.99.99.99'
 
 
-def test_get_collector_dicts():
+def test_get_collector_dicts_simple():
     expected_yaml = """
 - hostname: first_collector_name
   host_ip_address: '99.99.99.99'
@@ -107,12 +107,11 @@ def test_get_collector_dicts():
     assert result[1] in expected_data
 
 
+def test_get_collector_dicts_real():
 
-"""
-def test_real_data():
-    arq = '/resources/two_item_sample.yml'
-    real = get_data_from_yaml_file(arq)
-    result = get_collector_dicts(real)
-    assert len(result) == 2
-"""
+    from real_data import path_to_real_data_file
 
+    input_data = get_data_from_yaml_file(path_to_real_data_file())
+    result = get_collector_dicts(input_data)
+
+    assert len(result) == 106
