@@ -83,6 +83,16 @@ Documentation
 
 https://python-grains_from_collectors.readthedocs.io/
 
+Usage: main [OPTIONS] INPUT_FILE OUTPUT_FILE
+
+The input file comes from running this command on the C5/Z4 salt master:
+
+
+::
+
+    salt '*' grains.items --out=yaml --out-file=minion-grains.yml
+
+
 
 
 Development

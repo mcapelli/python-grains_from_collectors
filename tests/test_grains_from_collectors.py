@@ -13,3 +13,15 @@ def test_main(tmp_path):
 
     assert result.output == '2\n'
     assert result.exit_code == 0
+
+
+def test_main_usage(tmp_path):
+    runner = CliRunner()
+    result = runner.invoke(main, [])
+
+    assert result.output == """Usage: main [OPTIONS] INPUT_FILE OUTPUT_FILE
+Try "main --help" for help.
+
+Error: Missing argument "INPUT_FILE".
+"""
+    assert result.exit_code == 2
